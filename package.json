@@ -5,10 +5,17 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brahianf/IpTracker.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Angular"
+  ],
+  "author": "Brahianf Hurtado <brahianf.hurtado@gmail.com>",
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.11",
@@ -19,6 +26,8 @@
     "@angular/platform-browser": "~11.2.11",
     "@angular/platform-browser-dynamic": "~11.2.11",
     "@angular/router": "~11.2.11",
+    "dotenv": "^8.2.0",
+    "leaflet": "^1.7.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

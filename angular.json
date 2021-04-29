@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "00d63fc6-247f-4b6b-bb31-1d040a5e9810"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -21,9 +24,15 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
+              "./node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ],
             "scripts": []
