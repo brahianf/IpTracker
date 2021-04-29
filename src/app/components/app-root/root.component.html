@@ -1,0 +1,28 @@
+<!-- <input type="text" [(ngModel)]="title">
+{{ title }}
+
+<div *ngIf="1 ===1">
+  Elemento div
+</div>
+
+<button (click)="addItem()">
+  Add item
+</button>
+
+<ul>
+  <li *ngFor="let item of geoList; index as i">
+    {{item}} ({{i}})
+  </li>
+</ul> -->
+
+
+<!-- <app-home-filter class="content__home--filter"></app-home-filter> -->
+<!-- <app-home-map class="content__header"></app-header> -->
+<div class="app__banner">
+</div>
+<div class="app__detail">
+  <p>{{ title }}</p>
+  <app-filter (searchClicked)="searchClicked($event)"></app-filter>
+  <app-tracker [data$]="data$"></app-tracker>
+</div>
+<app-map  *ngIf="data$"></app-map>

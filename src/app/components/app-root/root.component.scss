@@ -1,0 +1,36 @@
+
+.app__banner{
+  margin: 0px;
+  width: 100%;
+  background-image: url('../../../assets/images/pattern-bg.png');
+  background-repeat: none;
+  background-size: 100%;
+  height: 250px;
+  @media (max-width: 375px) {
+  height: 300px;
+  }
+}
+
+.app__detail {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  z-index: 4;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  vertical-align: middle;
+  @media (max-width: 375px) {
+    top: 0px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  & p {
+    margin: 25px auto;
+    font-size: 25px;
+    color: white;
+  }
+}

@@ -1,0 +1,19 @@
+
+<div *ngIf="data$" class="tracker__div">
+  <p  class="tracker__div--label"> {{ labels[0] }}</p>
+  <p  class="tracker__div--detail"> {{ data$.ip }}</p>
+</div>
+<div  *ngIf="data$" class="tracker__div">
+  <p  class="tracker__div--label"> {{ labels[1] }} </p>
+  <p  class="tracker__div--detail"> {{ data$.location.region }} </p>
+  <p  class="tracker__div--detail"> {{ data$.location.city }} </p>
+  <p  class="tracker__div--detail"> {{ data$.location.postalCode }}  </p>
+</div>
+<div  *ngIf="data$" class="tracker__div">
+  <p  class="tracker__div--label"> {{ labels[2] }} </p>
+  <p  class="tracker__div--detail"> UTC {{ data$.location.timezone }} </p>
+</div>
+<div  *ngIf="data$" class="tracker__div">
+  <p  class="tracker__div--label"> {{ labels[3] }} </p>
+  <p class="tracker__div--detail"> {{ data$.isp }} </p>
+</div>
