@@ -25,8 +25,12 @@ export class AppRoot implements OnInit {
   }
 
   searchClicked(ip: string) {
-    this.ip = ip;
-    this.fetchData();
+    if(ip===undefined){
+      alert('key ip or domain');
+    } else {
+      this.ip = ip;
+      this.fetchData();
+    }
   }
 
   fetchData() {

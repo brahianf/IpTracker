@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "iptracker-89af8": {
+      "hosting": {
+        "iptracker": [
+          "iptracker-89af8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "iptracker-89af8"
+  }
+}
