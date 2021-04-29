@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API : {
+    apiKey: 'at_ZATkjY8NVPWQY2xTOkXmprb6Nmd4k',
+    URL: 'https://geo.ipify.org/api/',
+  }
 };
 
 /*
